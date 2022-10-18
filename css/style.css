@@ -26,15 +26,18 @@ header{
     padding: 0 2%;
 }
 .logo{
+    
     float: left;
     width: 30%;
 }
 .logo img{
     float: left;
+    cursor: pointer;
     width: 90px;
     margin-top: 20px ;
 }
 .logo h1{
+    cursor: pointer;
     margin-top: 20px;
     font-weight: bold;
     display: inline-block;
@@ -50,6 +53,7 @@ header{
 }
 .menu ul li{
     display: inline-block;
+    cursor: pointer;
     font-weight: bold;
     justify-content: space-between;
     font-size: 26px;
@@ -63,6 +67,11 @@ section h1{
     font-weight: bold;
     color: #FA8112
 }
+.influenciadores{
+    display: flex;
+    justify-content: space-between;
+
+}
 .influenciador{
     cursor: pointer;
     display: inline-block;
@@ -71,12 +80,74 @@ section h1{
 .influenciador img{
     border-radius: 100%;
 }
-.influenciador p{
-    margin-left: 20px;
-}
+
 .gradie h1{
     text-align: center;
     color: #FA8112;
     margin-top: 20px;
     font-size: 26px;
 }
+.produtos_gradie{
+ max-width: 1280px;
+ margin-top: 40px;
+    
+}
+.produtos {
+    width: 100%;
+  display: flex;
+  margin-left: 50px;
+  
+}
+.esp1{
+    width: 200px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 10px;
+    text-align: center;
+}
+.esp1 img{
+    width: 200px;
+    border-radius: 15px;
+}
+
+
+.NProdut{
+    width: 100%;
+    padding: 2%;
+    border-bottom: 10px;
+}
+.NProdut p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: black;
+    text-align: center;
+}
+.NProdut h2{
+    color: black;
+    margin-left: 10px;
+    text-align: center;
+}
+.botao{
+    text-align: center;
+    align-items: center;
+}
+.botao button{
+    width: 200px;
+    height: 40px;
+   margin-bottom: 10px;
+    padding: 1px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.botao button:hover{
+    cursor: pointer;
+    background: linear-gradient(#FA8112, #f88b1ef3)#FA8112;
+    border: 2px solid #070707;
+    
+}
+
