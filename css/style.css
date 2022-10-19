@@ -6,7 +6,7 @@
 }
 html, body{
     height: 100%;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-family: 'Roboto+Condensed', sans-serif;
     
 }
@@ -17,7 +17,7 @@ background-size: cover;
 }
 header{
     height: 70px;
-     background-color: black;
+     background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 2px 2px black;
 }
 .center{
@@ -59,6 +59,34 @@ header{
     font-size: 26px;
     margin-left: 20px;
 }
+.menu_mobile{
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 25px;
+    background-image: url('../img/icone\ _menu.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    display: none;
+}
+.menu_mobile ul{
+    display: none;
+    z-index: 999;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 72px;
+    text-align: center;
+    background-color:rgb(0, 0, 0);
+}
+.menu_mobile ul li{
+    font-size: 23px;
+    padding: 20px 0;
+}
+.menu_mobile ul li:hover{
+    
+    background-color: #d8730085;
+}
 .first_letter{
     color: #FA8112;
 }
@@ -80,74 +108,86 @@ section h1{
 .influenciador img{
     border-radius: 100%;
 }
-
+.gradie{
+    width: 100%;
+}
 .gradie h1{
     text-align: center;
     color: #FA8112;
     margin-top: 20px;
     font-size: 26px;
 }
-.produtos_gradie{
- max-width: 1280px;
- margin-top: 40px;
+.produtos{
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
     
 }
-.produtos {
-    width: 100%;
-  display: flex;
-  margin-left: 50px;
-  
+.produtos a{
+    text-decoration: none;
 }
-.esp1{
-    width: 200px;
-    height: 100%;
+.produtos img{
+    width: auto;
     border-radius: 10px;
+    border-bottom: 1px solid rgb(214, 212, 212);
+}
+.decoracao{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+.est1{
+    border-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     background-color: white;
-    box-shadow: 1px 1px 1px 10px;
-    text-align: center;
 }
-.esp1 img{
-    width: 200px;
-    border-radius: 15px;
+.est1  img{
+   height: 350px;
+   width: 270px;
+}
+.produtos .est1:hover{
+    box-shadow: 5px 5px 20px rgba(184, 184, 184, 0);
 }
 
-
-.NProdut{
-    width: 100%;
-    padding: 2%;
-    border-bottom: 10px;
+.est1 img:hover{
+    width: 300px;
 }
-.NProdut p{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    color: black;
-    text-align: center;
-}
-.NProdut h2{
-    color: black;
-    margin-left: 10px;
-    text-align: center;
-}
-.botao{
-    text-align: center;
-    align-items: center;
-}
-.botao button{
-    width: 200px;
-    height: 40px;
-   margin-bottom: 10px;
-    padding: 1px 20px;
+.botao_fantasia{
+    width: 50%;
+    height: 30px;
+    border-radius: 20px;
     font-weight: bold;
-    font-size: 15px;
-    border-radius: 10px;
-    text-align: center;
-    text-transform: uppercase;
+    margin: 10px;
 }
-.botao button:hover{
+.botao_fantasia:hover{
     cursor: pointer;
-    background: linear-gradient(#FA8112, #f88b1ef3)#FA8112;
-    border: 2px solid #070707;
+    background-color: #FA8112;
+    color: white;
+    font-size: 15px;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.295);
+    border: 1px solid #FA8112;
     
 }
+@media screen and (max-width: 1680px){
 
+    
+}
+    
+
+@media screen and (max-width:1080px){
+    .logo h1{
+        width: 1%;
+    }
+    .menu{
+        display: none;
+    }
+    .menu_mobile{
+        
+        display: block;
+    }
+
+    
+}
