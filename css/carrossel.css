@@ -27,6 +27,7 @@
 .fotos img:hover{
     padding: 0.1%;
 }
+
 @keyframes animacao{
     0%{ margin-left: 4%;}
     20%{margin-left: 4%;}
@@ -48,5 +49,35 @@
         75%{margin-left: -158%;}
         95%{margin-left: -240%;}
         100%{margin-left: 20%;}
+    }
+}
+@media screen and (max-width:580px){
+    
+    .galery{
+        width: 500px;
+        height: 280px;
+       margin: 10px 0px;
+    }
+     .fotos{
+        width: 400%;
+        animation-name: animacao;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+    .galery .fotos img{
+        width: 19.9%;
+       
+        cursor: pointer; }
+    
+
+    @keyframes animacao{
+        0%{ margin-left: 15%;}
+        20%{margin-left: 15%;}
+        25%{margin-left: -85%;}
+        50%{margin-left: -85%;}
+        70%{margin-left: -185%;}
+        75%{margin-left: -185%;}
+        95%{margin-left: -280%;}
+        100%{margin-left: 15%;}
     }
 }
